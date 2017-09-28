@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
+body,html{
+    height:100%;
+}
 
 body{
     margin: 0;
     padding: 0;
-    font-size: 14px;
-
+    /*font-size: 14px;*/
 }
 h1, h2, h3, h4, h5 {
     font-family: BebasNeue;
@@ -37,13 +39,6 @@ p{
     font-family: 'Open Sans', sans-serif;
     margin-left: 0.7em;
 }
-.main{
-    max-width: 960px;
-    margin: 0 auto;
-    border: none;
-    position:relative;
-
-}
 
 .row::after {
     content: "";
@@ -56,31 +51,30 @@ p{
     padding: 15px;
     padding-top: 0;
 }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 main{
-   max-width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
 
 }
+
 .sidebra_wraper{
+
     color: white;
     background-color: black;
-    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
     text-align: right;
-    padding: 40px;
+    padding: 10%;
+    display: flex;
+
+}
+.full_height{
+    flex: 1;
+    min-height: 100%;
+    height: 100%;
 
 }
 .image_wraper{
@@ -88,7 +82,7 @@ main{
     margin: 0 auto;
 }
 .sidebar_personal--photo{
-    max-width: 100%;
+    width: 100%;
 }
 .sidebar_personal--logo{
     max-width: 85%;
@@ -98,6 +92,7 @@ main{
     list-style: none;
     font-size: 14px;
     padding-bottom: 20px;
+    height: 100%;
 }
 li{
     font-size: 1.2em;
@@ -108,4 +103,236 @@ li{
     font-style: italic;
     font-size: 0.9em;
     margin-top: 60px;
+}
+.aside__form {
+    display: block;
+    width: 100%;
+}
+
+.aside__form--name {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: Helvetica;
+    color: black;
+    font-size: 15px;
+}
+
+.aside__form--e-mail {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 15px;
+}
+
+.aside__form--message {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 150px;
+    color: black;
+    font-size: 15px;
+}
+
+.aside__form--btn {
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+    border-radius: 7px;
+    max-width: 100%;
+    height: 50px;
+    font-size: 29px;
+    margin-top: 15px;
+}
+.progres_bar{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: #535353;
+    display: block;
+    border-radius: 5px 0 0 5px;
+
+}
+.progres{
+    width: 75%;
+    height: 100%;
+    background-color: #008CFF;
+    float: right;
+    border-radius: 5px 0 0 5px;
+}
+.container_heading--s{
+    text-align: center;
+}
+@media only screen and (max-width : 767px) {
+
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+
+    .sidebar_personal--logo{
+        display: none;
+    }
+
+    .container_heading--lg{
+        display: none;
+    }
+    .sidebar_personal--li--contact{
+        font-size: 7em;
+        text-align: center;
+    }
+    .sidebar_personal--h3--dane{
+        display: none;
+
+    }
+    .sidebar_personal--li--contact li{
+        font-size: 3em;
+        text-align: center;
+    }
+    .sidebar_personal--li li{
+        font-size: 2em;
+
+    }
+    .container_heading--h1{
+        line-height: 120px;
+    }
+    .container_heading--h2{
+        line-height: 50px;
+    }
+
+}
+@media screen and (min-width: 768px)  {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .sidebar_personal--logo{
+        display: none;
+    }
+    .container_heading--lg{
+        display: none;
+    }
+    .sidebar_personal--li--contact{
+        font-size: 7em;
+        text-align: center;
+    }
+    .sidebar_personal--h3--dane{
+        display: none;
+
+    }
+    .sidebar_personal--li--contact li{
+        font-size: 3em;
+        text-align: center;
+    }
+    .container_heading--h1{
+        line-height: 100px;
+    }
+    .container_heading--h2{
+        line-height: 50px;
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    .container_heading--s{
+        display: none;
+    }
+    .container_heading--lg{
+        display: block;
+    }
+    .sidebar_personal--logo{
+        display: block;
+    }
+    .sidebar_personal--li--contact{
+        font-size: 7em;
+        text-align: center;
+    }
+    .sidebar_personal--h3--dane{
+        display: block;
+
+    }
+    .sidebar_personal--li--contact li{
+        font-size: 1em;
+        text-align:right;
+    }
+    .sidebar_personal--li li{
+        font-size: 1em;
+
+    }
+    .container_heading--h1{
+        line-height: 100px;
+    }
+    .container_heading--h2{
+        line-height: 50px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+
+    .container_heading--s{
+        display: none;
+    }
+    .container_heading--lg{
+        display: block;
+    }
+    .sidebar_personal--logo{
+        display: block;
+    }
+    .sidebar_personal--li--contact{
+        font-size: 7em;
+        text-align: center;
+    }
+    .sidebar_personal--h3--dane{
+        display: block;
+
+    }
+    .sidebar_personal--li--contact li{
+        font-size: 1em;
+        text-align:right;
+    }
+    .sidebar_personal--li li{
+        font-size: 1em;
+
+    }
 }
