@@ -18,13 +18,11 @@ h1, h2, h3, h4, h5 {
 
 h1{
     font-size: 7.854em;
-    line-height: 10px;
     margin-bottom: 60px;
 
 }
 h2{
     font-size: 3.236em;
-    line-height: 10px;
 
 }
 h3{
@@ -91,13 +89,19 @@ main{
 .personal_wraper ul{
     list-style: none;
     font-size: 14px;
-    padding-bottom: 20px;
     height: 100%;
+    margin-left: 0;
 }
 li{
     font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6em;
+}
+ul{
+    padding-left: 0;
+}
+.sidebar_personal--li{
+    padding-left: 0;
 }
 .container_italic--p{
     font-style: italic;
@@ -107,14 +111,16 @@ li{
 .aside__form {
     display: block;
     width: 100%;
+    padding: 15px;
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .aside__form--name {
     margin-top: 5px;
     margin-bottom: 15px;
-    font-family: Helvetica;
     color: black;
-    font-size: 15px;
+
 }
 
 .aside__form--e-mail {
@@ -122,6 +128,7 @@ li{
     margin-bottom: 15px;
     color: black;
     font-size: 15px;
+    padding: 10px;
 }
 
 .aside__form--message {
@@ -130,17 +137,19 @@ li{
     height: 150px;
     color: black;
     font-size: 15px;
+    padding: 10px;
 }
 
 .aside__form--btn {
-    background-color: black;
+    background-color: #008CFF;
     border: solid 2px white;
     color: white;
     border-radius: 7px;
     max-width: 100%;
     height: 50px;
-    font-size: 29px;
+    font-size: 1.6em;
     margin-top: 15px;
+    padding: 0;
 }
 .progres_bar{
     margin-bottom: 20px;
@@ -161,6 +170,12 @@ li{
 }
 .container_heading--s{
     text-align: center;
+}
+.container_heading--h1{
+    margin: 40px 0px 0px 0px;
+}
+.container_heading--h2{
+    margin: 0;
 }
 @media only screen and (max-width : 767px) {
 
@@ -200,12 +215,12 @@ li{
         font-size: 2em;
 
     }
-    .container_heading--h1{
-        line-height: 120px;
-    }
-    .container_heading--h2{
-        line-height: 50px;
-    }
+    /*.container_heading--h1{*/
+        /*line-height: 120px;*/
+    /*}*/
+    /*.container_heading--h2{*/
+        /*line-height: 50px;*/
+    /*}*/
 
 }
 @media screen and (min-width: 768px)  {
@@ -241,12 +256,12 @@ li{
         font-size: 3em;
         text-align: center;
     }
-    .container_heading--h1{
-        line-height: 100px;
-    }
-    .container_heading--h2{
-        line-height: 50px;
-    }
+    /*.container_heading--h1{*/
+        /*line-height: 100px;*/
+    /*}*/
+    /*.container_heading--h2{*/
+        /*line-height: 50px;*/
+    /*}*/
 }
 @media screen and (min-width: 992px) {
 
@@ -275,9 +290,11 @@ li{
     .sidebar_personal--li--contact{
         font-size: 7em;
         text-align: center;
+        padding-right: 15px;
     }
     .sidebar_personal--h3--dane{
         display: block;
+        padding-right: 15px;
 
     }
     .sidebar_personal--li--contact li{
@@ -288,12 +305,12 @@ li{
         font-size: 1em;
 
     }
-    .container_heading--h1{
-        line-height: 100px;
-    }
-    .container_heading--h2{
-        line-height: 50px;
-    }
+    /*.container_heading--h1{*/
+        /*line-height: 100px;*/
+    /*}*/
+    /*.container_heading--h2{*/
+        /*line-height: 50px;*/
+    /*}*/
 }
 @media screen and (min-width: 1200px) {
 
@@ -325,14 +342,18 @@ li{
     }
     .sidebar_personal--h3--dane{
         display: block;
+        padding-right: 15px;
 
     }
     .sidebar_personal--li--contact li{
         font-size: 1em;
         text-align:right;
+        padding-right: 15px;
+        padding-left: 0px;
     }
     .sidebar_personal--li li{
         font-size: 1em;
 
     }
+
 }
