@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <title>Krzysztof Durak CV</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./fonts/MyFontsWebfontsKit.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <main>
+    <sidebar>
     <div class="row lolo">
         <div class="col-xs-12 col-s-12 col-md-4 col-lg-4 bolo">
             <div class="sidebra_wraper">
                 <div class="full_height">
                     <div class="image_wraper">
                         <img class="sidebar_personal--photo" src="./images/personal_photo.jpg" alt="Personal Photo">
-                        <img class="sidebar_personal--logo" src="./images/logo.svg" alt="Personal Logo">
+                        <img class="sidebar_personal--logo animated bounceIn" src="./images/logo.svg" alt="Personal Logo">
                     </div>
                     <div class="container_heading--s">
                         <h1 class="container_heading--h1">Krzysztof DURAK</h1>
                         <h2 class="container_heading--h2">Designer/Junior Front-end Developer</h2>
                     </div>
                     <div class="personal_wraper">
-                        <h3 class="sidebar_personal--h3--dane">Dane Osobowe</h3>
-                        <ul class="sidebar_personal--li--contact">
-                            <li>krzysztofdurak@gmail.com</li>
-                            <li>kom.: +48 697 144 792</li>
-                        </ul>
+                        <!--<i class="fa fa-envelope fa-2x" ></i>-->
+                        <h4 class="sidebar_personal--h3--dane">krzysztofdurak@gmail.com</h4>
+                        <!--<i class="fa fa-phone-square fa-2x"></i>-->
+                        <h4 class="sidebar_personal--h3--dane">kom.: +48 697 144 792</h4>
+                        <!--<ul class="sidebar_personal&#45;&#45;li&#45;&#45;contact">-->
+                            <!--<li>krzysztofdurak@gmail.com</li>-->
+                            <!--<li>kom.: +48 697 144 792</li>-->
+                        <!--</ul>-->
+
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-s-6 col-md-12 col-lg-12">
@@ -42,19 +50,19 @@
                                     <li>Adobe Illustrator</li>
                                     <li>
                                         <div class="progres_bar">
-                                            <div class="progres "></div>
+                                            <div class="progres ninety"></div>
                                         </div>
                                     </li>
                                     <li>Adobe InDesign</li>
                                     <li>
                                         <div class="progres_bar">
-                                            <div class="progres"></div>
+                                            <div class="progres eighty"></div>
                                         </div>
                                     </li>
                                     <li>Sketch</li>
                                     <li>
-                                        <div class="progres_bar">
-                                            <div class="progres"></div>
+                                        <div class="progres_bar ">
+                                            <div class="progres sixty"></div>
                                         </div>
                                     </li>
                                 </ul>
@@ -67,46 +75,51 @@
                                     <li>HTML5 i CSS3</li>
                                     <li>
                                         <div class="progres_bar">
-                                            <div class="progres"></div>
+                                            <div class="progres eighty"></div>
                                         </div>
                                     </li>
                                     <li>JavaScript</li>
                                     <li>
-                                        <div class="progres_bar">
-                                            <div class="progres"></div>
+                                        <div class="progres_bar ">
+                                            <div class="progres thirty"></div>
                                         </div>
                                     </li>
 
                                     <li>Bootstrap</li>
                                     <li>
-                                        <div class="progres_bar">
-                                            <div class="progres"></div>
+                                        <div class="progres_bar ">
+                                            <div class="progres eighty"></div>
                                         </div>
                                     </li>
 
                                     <li>ReactJS</li>
                                     <li>
                                         <div class="progres_bar">
-                                            <div class="progres"></div>
+                                            <div class="progres thirty"></div>
                                         </div>
                                     </li>
                                     <li>Git</li>
                                     <li>
                                         <div class="progres_bar">
-                                            <div class="progres"></div>
+                                            <div class="progres sixty"></div>
                                         </div>
                                     </li>
                                     <li>Scrum</li>
                                     <li>
-                                        <div class="progres_bar">
-                                            <div class="progres"></div>
+                                        <div class="progres_bar ">
+                                            <div class="progres sixty"></div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                         </div>
                     </div>
                     <!--<div class="push">lol</div>-->
+                    <div class="center_icons">
+                        <a class="animated zoomIn" href="https://www.linkedin.com/in/krzysztof-durak-b9746441/" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a class="animated zoomIn" href="https://github.com/burunia" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                        <a class="animated zoomIn" href="https://jsfiddle.net/user/burunia/fiddles/" target="_blank"><i class="fa fa-jsfiddle fa-3x"></i></a>
+                        </div>
                 </div>
             </div>
         </div>
@@ -176,7 +189,7 @@
                             <input class="aside__form aside__form--e-mail" id="Your e-mail" type="text" name="email">
                             <label for="Your e-mail">Message:</label>
                             <textarea class="aside__form aside__form--message" id="Message" name="message"></textarea>
-                            <input class="aside__form aside__form--btn" type="button" value="Send">
+                            <input class="aside__form aside__form--btn" type="button" value="Wyślij">
                         </form>
                         <p class="container_italic--p">Wyrażam zgodę na przetwarzanie moich danych osobowych dla
                             potrzeb
@@ -189,5 +202,6 @@
         </div>
 
 </main>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </body>
 </html>

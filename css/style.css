@@ -97,6 +97,10 @@ main{
     height: 100%;
     margin-left: 0;
 }
+.personal_wraper h4{
+    text-align: center;
+    margin: 15px;
+}
 li{
     font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
@@ -149,6 +153,9 @@ ul{
 
 .aside__form--btn {
     background-color: #008CFF;
+    font-family: BebasNeue;
+    font-weight: normal;
+    font-style: normal;
     border: solid 2px white;
     color: white;
     border-radius: 7px;
@@ -157,6 +164,7 @@ ul{
     font-size: 1.6em;
     margin-top: 15px;
     padding: 0;
+    letter-spacing: 1px;
 }
 .progres_bar{
     margin-bottom: 20px;
@@ -178,6 +186,26 @@ ul{
 .ninety{
     width: 90%;
 }
+.eighty{
+    width: 80%;
+}
+.sixty{
+    width: 60%;
+}
+.fifty{
+    width: 50%;
+}
+.thirty{
+    width: 30%;
+}
+.center_icons{
+    display: flex;
+    justify-content: center;
+}
+.center_icons a {
+    margin: 5%;
+    color: white;
+}
 .container_heading--s{
     text-align: center;
 }
@@ -186,6 +214,7 @@ ul{
 }
 .container_heading--h2{
     margin: 0;
+
 }
 
 @media only screen and (max-width : 767px) {
@@ -214,10 +243,10 @@ ul{
         font-size: 7em;
         text-align: center;
     }
-    .sidebar_personal--h3--dane{
-        display: none;
+    /*.sidebar_personal--h3--dane{*/
+        /*display: none;*/
 
-    }
+    /*}*/
     .sidebar_personal--li--contact li{
         font-size: 3em;
         text-align: center;
@@ -262,10 +291,6 @@ ul{
     .sidebar_personal--li--contact{
         font-size: 7em;
         text-align: center;
-    }
-    .sidebar_personal--h3--dane{
-        display: none;
-
     }
     .sidebar_personal--li--contact li{
         font-size: 3em;
@@ -314,7 +339,7 @@ ul{
     }
     .sidebar_personal--h3--dane{
         display: block;
-        padding-right: 15px;
+        /*padding-right: 15px;*/
 
     }
     .sidebar_personal--li--contact li{
@@ -376,7 +401,7 @@ ul{
     }
     .sidebar_personal--h3--dane{
         display: block;
-        padding-right: 15px;
+        /*padding-right: 15px;*/
 
     }
     .sidebar_personal--li--contact li{
